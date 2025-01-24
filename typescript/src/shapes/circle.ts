@@ -1,8 +1,10 @@
+import { Shape } from './shape.js'
+
 function circle(radius: number): Shape {
+    const r = radius;
     return {
-        radius,
         computeArea: function (): number {
-            return Math.PI * radius * radius
+            return Math.PI * r * r
         }
     }
 }

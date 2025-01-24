@@ -1,8 +1,10 @@
+import { Shape } from './shape.js'
+
 function square(sideLen: number): Shape {
+    const len = sideLen;
     return {
-        sideLen,
         computeArea: function (): number {
-            return sideLen * sideLen
+            return len * len
         }
     }
 }
